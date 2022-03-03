@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="halt_anglo_saxon_jv.list">
+      <field name="name">halt_anglo_saxon_jv list</field>
+      <field name="model">halt_anglo_saxon_jv.halt_anglo_saxon_jv</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="halt_anglo_saxon_jv.action_window">
+      <field name="name">halt_anglo_saxon_jv window</field>
+      <field name="res_model">halt_anglo_saxon_jv.halt_anglo_saxon_jv</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="halt_anglo_saxon_jv.action_server">
+      <field name="name">halt_anglo_saxon_jv server</field>
+      <field name="model_id" ref="model_halt_anglo_saxon_jv_halt_anglo_saxon_jv"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="halt_anglo_saxon_jv" id="halt_anglo_saxon_jv.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="halt_anglo_saxon_jv.menu_1" parent="halt_anglo_saxon_jv.menu_root"/>
+    <menuitem name="Menu 2" id="halt_anglo_saxon_jv.menu_2" parent="halt_anglo_saxon_jv.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="halt_anglo_saxon_jv.menu_1_list" parent="halt_anglo_saxon_jv.menu_1"
+              action="halt_anglo_saxon_jv.action_window"/>
+    <menuitem name="Server to list" id="halt_anglo_saxon_jv" parent="halt_anglo_saxon_jv.menu_2"
+              action="halt_anglo_saxon_jv.action_server"/>
+-->
+  </data>
+</odoo>
